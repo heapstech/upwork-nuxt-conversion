@@ -5,7 +5,7 @@
  * to ensure cascade of styles.
  */
 /*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -188,7 +188,8 @@ caption {
   caption-side: bottom; }
 
 th {
-  text-align: inherit; }
+  text-align: inherit;
+  text-align: -webkit-match-parent; }
 
 label {
   display: inline-block;
@@ -1435,16 +1436,10 @@ pre {
     border-color: #2C7BE5;
     outline: 0;
     box-shadow: transparent; }
-  .form-control::-webkit-input-placeholder {
-    color: #B1C2D9;
-    opacity: 1; }
   .form-control::-moz-placeholder {
     color: #B1C2D9;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #B1C2D9;
-    opacity: 1; }
-  .form-control::-ms-input-placeholder {
     color: #B1C2D9;
     opacity: 1; }
   .form-control::placeholder {
@@ -2711,7 +2706,9 @@ input[type="button"].btn-block {
   z-index: 1;
   display: block;
   min-height: 1.40625rem;
-  padding-left: 1.5rem; }
+  padding-left: 1.5rem;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact; }
 
 .custom-control-inline {
   display: inline-flex;
@@ -3795,6 +3792,7 @@ input[type="button"].btn-block {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2;
     padding: 0.75rem 1.25rem;
     color: inherit; }
 
@@ -7932,7 +7930,7 @@ a.text-white:hover, a.text-white:focus {
 
 .text-break {
   word-break: break-word !important;
-  overflow-wrap: break-word !important; }
+  word-wrap: break-word !important; }
 
 .text-reset {
   color: inherit !important; }
@@ -9002,8 +9000,7 @@ a.text-white:hover, a.text-white:focus {
     color: #FFFFFF; }
 
 .navbar-dark .navbar-brand {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .navbar-dark .navbar-collapse::before {
   border-top-color: #1E3A5C; }
@@ -9093,8 +9090,7 @@ a.text-white:hover, a.text-white:focus {
     color: #FFFFFF; }
 
 .navbar-dark.navbar-vibrant .navbar-brand {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1); }
+  filter: brightness(0) invert(1); }
 
 .navbar-dark.navbar-vibrant .navbar-collapse::before {
   border-top-color: rgba(255, 255, 255, 0.2); }
@@ -9174,8 +9170,7 @@ a.text-white:hover, a.text-white:focus {
     color: #12263F; }
 
 .navbar-light .navbar-brand {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .navbar-light .navbar-collapse::before {
   border-top-color: #E3EBF6; }
@@ -11426,13 +11421,9 @@ a:focus, button:focus {
   box-shadow: none;
   outline: none;
   color: #12263F; }
-  .select2-search--inline .select2-search__field::-webkit-input-placeholder {
-    color: #B1C2D9; }
   .select2-search--inline .select2-search__field::-moz-placeholder {
     color: #B1C2D9; }
   .select2-search--inline .select2-search__field:-ms-input-placeholder {
-    color: #B1C2D9; }
-  .select2-search--inline .select2-search__field::-ms-input-placeholder {
     color: #B1C2D9; }
   .select2-search--inline .select2-search__field::placeholder {
     color: #B1C2D9; }

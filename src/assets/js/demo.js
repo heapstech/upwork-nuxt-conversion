@@ -1,5 +1,5 @@
 //
-// demo.js
+// modes.js
 // Theme module
 //
 
